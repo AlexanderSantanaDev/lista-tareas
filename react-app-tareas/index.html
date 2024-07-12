@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gestión de Tareas</title>
+    </head>
+    <body class="bg-gray-900 min-h-screen flex flex-col">
+        <div id="root" class="max-w-5xl px-4 m-auto flex-grow flex flex-col items-center"></div>
+        <script type="module" src="/src/main.jsx"></script>
+
+        <!-- PIE DE PÁGINA -->
+        <footer class="w-full mt-4 bg-gray-800 text-white text-center py-4">
+            <p>&copy; Alexander Santana</p>
+        </footer>
+        <!-- FIN PIE DE PÁGINA -->
+
+        <style is:global>
+            html {
+                font-family: system-ui, sans-serif;
+                background: #13151a;
+                background-size: 224px;
+                /*si hay modo oscuro permite que las letras se adecuen a dicho modo */
+                color-scheme: dark white;
+            }
+        </style>
+    </body>
+</html>

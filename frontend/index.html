@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Gestión de Tareas</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body class="bg-gray-900 min-h-screen flex flex-col">
+        <main class="max-w-5xl px-4 m-auto flex-grow flex flex-col items-center">
+            <form id="taskForm" class="pt-8 text-center">
+                <input
+                    type="text"
+                    class="peer block min-h-[auto] w-96 text-teal-500 rounded border-0 bg-gray-300 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear peer-focus:text-teal-500 motion-reduce:transition-none dark:text-teal-500 dark:peer-focus:text-teal-500"
+                    id="title"
+                    placeholder="Título de la tarea"
+                    required
+                />
+                <textarea
+                    id="description"
+                    class="peer mt-4 block min-h-[auto] w-96 text-teal-500 rounded border-0 bg-gray-300 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear peer-focus:text-teal-500 motion-reduce:transition-none dark:text-teal-500 dark:peer-focus:text-teal-500"
+                    placeholder="Descripción de la tarea"
+                    required
+                ></textarea>
+                <button
+                    type="submit"
+                    class="inline-block mt-4 rounded bg-teal-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                >
+                    Agregar Tarea
+                </button>
+            </form>
+            <hr />
+            <h1 class="bg-gray-500 rounded-md mt-4 pl-2 pr-2">Lista de Tareas</h1>
+            <ul id="taskList"></ul>
+        </main>
+
+        <!-- PIE DE PÁGINA -->
+        <footer class="w-full mt-4 bg-gray-800 text-white text-center py-4">
+            <p>&copy; Alexander Santana</p>
+        </footer>
+        <!-- FIN PIE DE PÁGINA -->
+        <style is:global>
+            html {
+                font-family: system-ui, sans-serif;
+                background: #13151a;
+                background-size: 224px;
+                /*si hay modo oscuro permite que las letras se adecuen a dicho modo */
+                color-scheme: dark white;
+            }
+        </style>
+    </body>
+</html>
