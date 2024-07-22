@@ -1,7 +1,5 @@
 <h1 align="left">Lista Tareas</h1>
 
-# Lista-tareas
-
 -   Para ejecutar la primera parte del script hecho con php y javascript (JQuery):
     -   en el fichero script.js en las rutas usasdas "/proyectos/lista-tareas/api.php", remplazar 'proyectos' por la ruta donde
         tengas tu servidor local apache 'TU-RUTA-SERVIDOR-LOCAL'
